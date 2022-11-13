@@ -8,7 +8,7 @@ function Jobs() {
   const [vagas, setVagas] = useState([]);
 
   useEffect(() => {
-    fetch("https://localhost:44337/api/vagas", {
+    fetch("https://localhost:44363/api/vagas", {
       method: "GET",
     })
       .then((response) => response.json())
