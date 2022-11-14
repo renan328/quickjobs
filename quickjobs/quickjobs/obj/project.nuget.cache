@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+OLond6jhF5Udzo7cqELkFiEGPQRiMRP/MF3TPPpFwn1JSP7AB4DqC6p5f6NbPNFoaV+TjiKSp+hgApJsp8rAg==",
+  "success": true,
+  "projectFilePath": "D:\\quick-jobs-main\\quickjobs\\quickjobs\\quickjobs.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Renan\\.nuget\\packages\\mysqlconnector\\2.1.13\\mysqlconnector.2.1.13.nupkg.sha512",
+    "C:\\Users\\Renan\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
