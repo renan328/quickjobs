@@ -1,5 +1,6 @@
 import "./App.css";
 import logo from './img/qjlogo.png';
+import logoSimple from './img/qjlogoSimple.png';
 import Jobs from "./Components/Jobs/Jobs";
 
 function App() {
@@ -34,6 +35,18 @@ function App() {
         </form>
       </div>
       <Jobs></Jobs>
+      <footer>
+        <span><img src={logoSimple} className="logo-footer" alt="logo" /></span>
+        <ul>
+          <li>Criadores: </li>
+          <li>Lucas</li>
+          <li>Marcos</li>
+          <li>Otávio</li>
+          <li>Raul</li>
+          <li>Romário</li>
+          <li>Renan</li>
+        </ul>
+      </footer>
     </div>
   );
 }
