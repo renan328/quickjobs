@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(90deg, rgba(6,11,36,1) 0%, rgba(31,2,40,1) 100%); 
+  background: linear-gradient(90deg, rgba(6, 11, 36, 1) 0%, rgba(31, 2, 40, 1) 100%);
 }
 
 header {
@@ -15,7 +15,7 @@ header {
   justify-content: space-between;
 }
 
-.imgBox img{
+.imgBox img {
   margin-left: 50px;
   height: 80px;
 }
@@ -102,49 +102,118 @@ button#cadastrar {
   background: #fff;
   cursor: pointer;
   background: linear-gradient(90deg, rgba(225, 175, 204, 1) 0%, rgba(117, 48, 227, 1) 100%);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-shadow: none;
 }
 
-.home{
-  height: 800px;
+.home {
+  height: 820px;
   background-image: url('./img/homeBG.png');
+  background-position: fixed;
+  background-repeat: no-repeat;
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  
 }
 
-h1.homeText{
+h1.homeText {
   font-size: 65px;
   text-align: left;
   position: relative;
   left: 100px;
   top: -100px;
+  font-weight: 600;
 }
 
-g{
-  background: linear-gradient(90deg, rgba(225,175,204,1) 0%, rgba(117,48,227,1) 100%);
+g {
+  background: linear-gradient(90deg, rgba(225, 175, 204, 1) 0%, #7530e3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 800;
 }
 
+.inputArea {
+  margin: 50px;
+  width: 60%;
+}
 
+input#jobSearch {
+  padding: 20px 20px;
+  margin: 20px 0;
+  width: 100%;
+  font-size: 20px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.177);
+  border: none;
+  border-radius: 20px;
+  transition: 0.2s;
+  animation-timing-function: ease-out;
+  -webkit-box-shadow: 6px 6px 16px -8px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 6px 6px 16px -8px rgba(0, 0, 0, 0.8);
+  box-shadow: 6px 6px 16px -8px rgba(0, 0, 0, 0.8);
+}
 
-@keyframes animate {
+input#jobSearch:focus {
+  transition: 0.2s;
+  background: rgba(255, 255, 255, 0.276);
+  outline: none;
+  animation-timing-function: ease-in;
+  padding: 30px 20px;
+}
 
+input#jobSearchButton {
+  width: 100%;
+  font-size: 18px;
+  border-radius: 15px;
+  background-color: #7530e3;
+  border: none;
+  padding: 20px;
+  font-weight: 700;
+  -webkit-box-shadow: 6px 6px 16px -8px rgba(0, 0, 0, 0.367);
+  -moz-box-shadow: 6px 6px 16px -8px rgba(0, 0, 0, 0.8);
+  box-shadow: 6px 6px 16px -8px rgba(0, 0, 0, 0.8);
+  transition: 0.2s;
+}
+
+input#jobSearchButton:hover{
+  transition: 0.2s;
+  cursor: pointer;
+  background:rgba(225, 175, 204, 1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.287);
+
+}
+
+@keyframes rotate {
   0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
-    border-radius: 0;
+    transform: rotate(0deg);
   }
-
   100% {
-    transform: translateY(-1000px) rotate(720deg);
-    opacity: 0;
-    border-radius: 50%;
+    transform: rotate(360deg);
   }
+}
 
+.gradient {
+  --size: 250px;
+  --speed: 50s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 5));
+  background-image: linear-gradient(hsl(158, 82, 57, 85%), hsl(252, 82, 57));
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+@media (min-width: 720px) {
+  .gradient {
+    --size: 500px;
+  }
+}
+
+/* This is just to transition when you change the viewport size. */
+* {
+  transition: all 0.25s ease-out;
 }

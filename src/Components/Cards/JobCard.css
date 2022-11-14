@@ -1,7 +1,7 @@
 .card {
   display: flex;
   margin: 0 auto;
-  background-color: #373737;
+  background-color: rgba(255, 255, 255, 0.112);
   border-radius: 1rem;
   padding: 2rem;
   width: 75%;
@@ -13,7 +13,9 @@
 }
 
 .card:hover {
+  transition: 0.2s;
   opacity: 1;
+  box-shadow: #ffffff29 0px 4px 15px 0px;
 }
 
 .card:hover h1 {
@@ -35,6 +37,7 @@
 
 .text-area {
   text-align: left;
+  color: #000 !important;
 }
 
 .title-area {
