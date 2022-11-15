@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32929.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quickjobs", "quickjobs\quickjobs.csproj", "{290028EC-CADE-4CF3-8ED1-D888D127FA39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{290028EC-CADE-4CF3-8ED1-D888D127FA39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{290028EC-CADE-4CF3-8ED1-D888D127FA39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{290028EC-CADE-4CF3-8ED1-D888D127FA39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{290028EC-CADE-4CF3-8ED1-D888D127FA39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CA2E5DF-DFD3-4060-9470-DD08B5CC7BA5}
+	EndGlobalSection
+EndGlobal
